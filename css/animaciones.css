@@ -1,0 +1,42 @@
+
+.live__text--gradient{
+    background: rgb(6,6,23);
+    background: linear-gradient(148deg, rgba(6,6,23,1) 2%, rgba(73,73,134,1) 95%);}
+    
+
+.live__title--gradient{
+    background: rgb(158,77,0);
+    background: radial-gradient(circle, rgba(158,77,0,1) 0%, rgba(93,45,0,1) 100%);}
+
+
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+@keyframes slide {
+    from {left: -200px;}
+    to {left: 0;}
+  }
+.slide{position: relative;
+    animation: slide 0.5s 1;}
+
+.underline{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;}
+
+.underline:hover{
+    background-size: 100% 1px;
+    padding: 3px;
+}
+
+/*
+<script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+*/
