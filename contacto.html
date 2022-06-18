@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eve - NO OFFICIAL SITE</title>
+	<link rel="shortcut icon" href="img/logos/evefavicon.jpg">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animaciones.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="body grid__contacto">
+	<nav class="grid__nav nav">
+		<a href="index.html">
+			<img src="img/logos/evelogo2.png" class="nav__logo wow fadeIn" alt="logo de eve"></a>
+		<ul class="barra__botones">
+			<li class="nav__botones"><a href="biografia.html" class="text500 hover underline scale">BIOGRAFIA</a></li>
+			<li class="nav__botones"><a href="discografia.html"class="text500 hover underline scale">DISCOGRAFIA</a></li>
+			<li class="nav__botones"><a href="merchandising.html"class="text500 hover underline scale">MERCHANDISING</a></li>
+			<li class="nav__botones"><a href="contacto.html"class="text500 hover underline scale">CONTACTO</a></li>
+			<li class="nav__botones"><a href="index.html#news"class="text500 hover underline scale">NEWS</a></li>
+			<li class="nav__botones"><a href="index.html#liveTitulo"class="text500 hover underline scale">LIVE</a></li>
+		</ul>
+	</nav>
+	<header class="grid__header header">
+		<img src="img/logos/logo_eve.png" class="header__logo" id="inicio">
+	</header>
+	<main>
+	
+		<h2 class="title">CONTACTO</h2>
+		<h3 class="text500 form__title">VENTA DE ENTRADAS DEL TOUR 2022</h3>
+		<section>
+			<div class="grid__form">
+				<!--empieza form-->
+			<form action="envio.php" method="post" class=>
+				<fieldset class="contact__form--content">
+					<legend class="form__subtitle">Info de contacto</legend>
+					<div>
+						<label for="nombre">Nombre</label><br>
+						<input type="text" name="nombre" id="nombre" placeholder="nombre"><br>
+						<label for="email">Email</label><br>
+						<input type="email" name="email" id="email" placeholder="eve@hola.com"><br>
+						<legend class="form__subtitle">Entradas</legend>
+						<label for="50$">Común 50$</label>
+						<input type="radio" name="comun" id="50$" value="compra"><br>
+						<label for="75$">VIP 75$</label>
+						<input type="radio" name="compravip" id="75$" value="vip"><br>
+						<label for="fecha">Fecha</label>
+						<input type="date" name="fecha a asistir" id="fecha" value="fecha" class="input__btn"><br></div>
+				</fieldset>
+				<fieldset class="contact__form--content">
+					<legend class="form__subtitle">Entrega de entradas</legend>
+					<div class="list__text">
+						<label for="local">Entrega en el lugar</label>
+						<input type="radio" name="entrega" id="local" value="local"><br>
+						<label for="envio">Envio a domicilio</label>
+						<input type="radio" name="entrega" id="envio" value="envio"><br>
+						<label for="localidad">Localidad</label>
+						<select name="localidad" id="localidad" class="input__btn">
+							<option value="caba" class="input__btn">CABA</option>
+							<option value="bsas" class="input__btn">Buenos Aires</option>
+							<option value="interior" class="input__btn">Interior del pais</option>
+						</select><br>
+					<label for="direccion">Dirección de domicilio</label>
+					<textarea name="direccion" id="direccion" cols="10" rows="1"></textarea>
+				</fieldset>
+				<input type="submit" value="enviar" class="input__btn hover">
+				<input type="reset" value="cancelar" class="input__btn hover"> 
+			</form></div>
+		<!-- termina form -->
+		</section>
+	</main><!--inicia mapa-->
+	<section class="grid__map">
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3365716297126!2d139.74751891557852!3d35.693334336914816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6b802bf413%3A0x215b5c71c9657188!2sNihon%20Bud%C5%8Dkan!5e0!3m2!1ses!2sar!4v1653004987781!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+<!--termina mapa-->
+
+	<footer class="grid__footer">
+		<div class="footer__btn"><a href="#inicio"><img src="img/logos/arribalogo.png" class="footer__btn--size scale" alt="logo hacia el inicio"></a></div>	
+		<div class="redes__box"><h3>Redes sociales</h3>
+			<ul>
+				<a href="https://www.instagram.com/eve_harapeco/" target="_blank"><img src="img/logos/instagram.png" class="redes__logo scale" alt="seguime en instagram"></a>
+				<a href="https://twitter.com/oo0eve0oo?lang=ja"><img src="img/logos/twitter.png" class="redes__logo scale" alt="seguime en twitter"></a>
+				<a href="https://www.youtube.com/user/ooo0eve0ooo"><img src="img/logos/youtube.png" class="redes__logo scale" alt="Buscame en youtube"></a>
+			</ul></div><br>
+				<img src="img/logos/copyright.png" class="copy">
+		
+<!--El formulario va a estar en la pagina de contacto y la tabla en la pagina de discografia-->	
+
+	</footer>
+	<script src="js/wow.min.js"></script>
+    	<script>
+        	new WOW().init();
+    	</script>
+</body>
+</html>

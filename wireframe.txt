@@ -1,0 +1,17 @@
+mobile: https://wireframe.cc/XLdnLV
+escritorio: https://wireframe.cc/9wVfPo
+
+(Desktop)
+home:https://whimsical.com/home-KheBQ8dbJ6wAF8ehyT8wTX
+biografia:https://whimsical.com/biografia-TWuFEFnc5MC3YNZ9vEn7jJ
+discografia:https://whimsical.com/discografia-J8dMU4L3LRGZTjjJH2EVBF
+merch:https://whimsical.com/merchandising-CxS6mKef13pNWxCCXUyaFV
+contacto:https://whimsical.com/contacto-HE6yPt3N829xMcKQJgDC6W
+
+
+(Mobile)
+home:https://whimsical.com/home-mobile-7q3Vyt9VF2UYrDDE8DJWUt
+biografia:https://whimsical.com/biografia-mobile-TiJMFR2cHjvpRXWNSZxjaV
+discografia:https://whimsical.com/discografia-mobile-WpZW1csgBbP6mGUqtjeEXh
+merch:https://whimsical.com/merch-mobile-RT9jcTYveiBRBfY2Pr5AZ
+contacto:https://whimsical.com/contacto-mobile-5dq1dpkkw1VdgKQNFJhwsm
