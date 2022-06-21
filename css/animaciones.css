@@ -30,13 +30,5 @@
 
 .underline:hover{
     background-size: 100% 1px;
-    padding: 3px;
+    padding: 1px;
 }
-
-/*
-<script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-*/

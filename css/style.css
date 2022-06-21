@@ -18,7 +18,8 @@ porque todavia no habiamos visto esa parte del contenido*/
     text-align: center;}
 
 .header__img{width: 100%;
-    display: none;}
+    display: none;
+   }
 
 .header__logo{
     width: 40%;
@@ -32,7 +33,6 @@ porque todavia no habiamos visto esa parte del contenido*/
 .grid__nav{
     /*background-color: aqua;*/
     grid-area: nav;
-    display: none;
 }
 .grid__header{/*background-color: blue;*/
     grid-area: header;
@@ -56,27 +56,27 @@ porque todavia no habiamos visto esa parte del contenido*/
     margin: 0;
     display: grid;
     grid-template-areas:
+        "nav"
         "header"
         "live"
         "info"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 /*grids*/
 
 /* body*/
-* {
-    font-family: 'Lora', serif;
-    color: white;
-}
 
-.body {
+
+.body {font-family: 'Lora', serif;
+    color: white;
     overflow-x: hidden;
     background-attachment: fixed;
     background-image: url(../img/background/blackcolor.png)
     }
 
+.txt__white{color: aliceblue;}
 /*body*/
 
 
@@ -95,6 +95,8 @@ porque todavia no habiamos visto esa parte del contenido*/
     text-decoration: none;}
 /*single index*/
 /*news index*/
+.news__title{font-size: 1.2em;
+padding: 1em;}
 .article__news{
     padding: 0 0 0 2em;
 }
@@ -105,7 +107,7 @@ porque todavia no habiamos visto esa parte del contenido*/
 }
 .text__small {
     font-size: 0.8em;}
-.border {border-bottom: 1px solid gray;
+.border__bottom {border-bottom: 1px solid gray;
     padding: 1em;}
 /*news index*/
 /*live index*/
@@ -139,7 +141,8 @@ porque todavia no habiamos visto esa parte del contenido*/
 /*footer*/
 .redes__box {display: flex;
     justify-content: space-between;
-    padding: 0 2em;
+    align-items: center;
+    padding: 0.8em 4em;
     margin: 0 1em;
     background-color: rgb(19, 19, 19);
     box-shadow: 0px 0px 16px 0px rgba(128,128,128,0.57);
@@ -147,10 +150,11 @@ porque todavia no habiamos visto esa parte del contenido*/
     -moz-box-shadow: 0px 0px 16px 0px rgba(128,128,128,0.57);
     box-sizing: border-box;
     border-radius: 8px;}
+.footer__title{font-size: 1.3em;}
 .footer__btn{text-align: center;
 padding: 1em;}
 .footer__btn--size{width: 3rem;}
-.redes__logo{width: 2rem;}
+.redes__logo{width: 2em;}
 .copy{width: 1rem;}
 /*footer*/
 
@@ -161,6 +165,7 @@ padding: 1em;}
 @media screen and (min-width: 768px){
     .grid{
         grid-template-areas:
+            "nav"
             "header"
             "live"
             "info"
@@ -211,7 +216,7 @@ padding: 1em;}
     .header__img{
         display: grid;
     }
-
+    
     .nav{
         background-color: rgb(0, 0, 0, 0.1);
         top: 0;
@@ -339,11 +344,12 @@ padding: 1em;}
     margin: 0;
     display: grid;
     grid-template-areas:
+        "nav"
         "header"
         "bio"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 
 /*grids*/
@@ -423,12 +429,13 @@ text-align: center;}
     margin: 0;
     display: grid;
     grid-template-areas:
+        "nav"
         "header"
         "discos"
         "video"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
 /*grids*/
 
@@ -457,7 +464,7 @@ text-align: center;}
         margin: 0;
         display: grid;
         grid-template-areas:
-            'nav'
+            "nav"
             "header"
             "discos"
             "video"
@@ -508,11 +515,12 @@ text-align: center;}
     margin: 0;
     display: grid;
     grid-template-areas:
+        "nav"
         "header"
         "merch"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 /*grids*/
 
@@ -592,12 +600,13 @@ text-align: center;}
     margin: 0;
     display: grid;
     grid-template-areas:
+        "nav"
         "header"
         "form"
         "map"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
 /*grids*/
 
@@ -612,7 +621,7 @@ text-align: center;}
         margin: 0;
         display: grid;
         grid-template-areas:
-            'nav nav'
+            "nav nav"
             "header header"
             "form map"
             "form map"

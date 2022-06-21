@@ -5,23 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Eve - NO OFFICIAL SITE</title>
 	<link rel="shortcut icon" href="img/logos/evefavicon.jpg">
+	<!-- Bootstrap CSS --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animaciones.css">
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body class="body grid__biografia">
-	<nav class="grid__nav nav">
-		<a href="index.html">
-			<img src="img/logos/evelogo2.png" class="nav__logo wow fadeIn" alt="logo de eve"></a>
-		<ul class="barra__botones">
-			<li class="nav__botones"><a href="biografia.html" class="text500 hover underline scale">BIOGRAFIA</a></li>
-			<li class="nav__botones"><a href="discografia.html"class="text500 hover underline scale">DISCOGRAFIA</a></li>
-			<li class="nav__botones"><a href="merchandising.html"class="text500 hover underline scale">MERCHANDISING</a></li>
-			<li class="nav__botones"><a href="contacto.html"class="text500 hover underline scale">CONTACTO</a></li>
-			<li class="nav__botones"><a href="index.html#news"class="text500 hover underline scale">NEWS</a></li>
-			<li class="nav__botones"><a href="index.html#liveTitulo"class="text500 hover underline scale">LIVE</a></li>
-		</ul>
-	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark grid__nav nav bg-transparent">
+		<div class="container-fluid">
+			<a href="index.html">
+				<img src="img/logos/evelogo2.png" class="nav__logo wow fadeIn " alt="logo de eve"></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav barra__botones align-items-center ">
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="biografia.html">Biografia</a>
+			  </li>
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="discografia.html">Discografia</a>
+			  </li>
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="merchandising.html">Merchandising</a>
+			  </li>
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="contacto.html">Contacto</a>
+			  </li>
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#news">News</a>
+			  </li>
+			  <li class="nav-item nav__botones">
+				<a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#liveTitulo">Live</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 	<header class="grid__header header">
 		<img src="img/logos/logo_eve.png" class="header__logo" id="inicio">
 	</header>
@@ -48,12 +68,14 @@
 		
 	<footer class="grid__footer">
 		<div class="footer__btn"><a href="#inicio"><img src="img/logos/arribalogo.png" class="footer__btn--size scale" alt="logo hacia el inicio"></a></div>	
-		<div class="redes__box"><h3>Redes sociales</h3>
+		<div class="redes__box">
+			<h3 class="footer__title">Redes sociales</h3>
 			<ul>
 				<a href="https://www.instagram.com/eve_harapeco/" target="_blank"><img src="img/logos/instagram.png" class="redes__logo scale" alt="seguime en instagram"></a>
 				<a href="https://twitter.com/oo0eve0oo?lang=ja"><img src="img/logos/twitter.png" class="redes__logo scale" alt="seguime en twitter"></a>
 				<a href="https://www.youtube.com/user/ooo0eve0ooo"><img src="img/logos/youtube.png" class="redes__logo scale" alt="Buscame en youtube"></a>
-			</ul></div><br>
+			</ul>
+		</div><br>
 				<img src="img/logos/copyright.png" class="copy">
 		
 <!--El formulario va a estar en la pagina de contacto y la tabla en la pagina de discografia-->	
@@ -63,5 +85,7 @@
     	<script>
         	new WOW().init();
     	</script>
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
