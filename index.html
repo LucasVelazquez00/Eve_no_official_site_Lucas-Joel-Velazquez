@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body grid">
+	<!-------------------- nav ---------------------------------->
 	<nav class="navbar navbar-expand-lg navbar-dark grid__nav nav bg-transparent">
 		<div class="container-fluid">
 			<a href="index.html">
@@ -42,9 +43,10 @@
 		  </div>
 		</div>
 	  </nav>
+	  <!-------------------------- nav ---------------------------------->
 	<header class="grid__header header">
 		<img src="img/logos/logo_eve.png" class="header__logo" id="inicio">
-
+		<!---------------------- carousel ------------------------------------>
 		<div id="carouselExampleControls" class="carousel slide header__img" data-bs-ride="carousel">
 			<div class="carousel-inner">
 			  <div class="carousel-item active">
@@ -66,16 +68,16 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		  </div>
-
+		  <!-------------------- carousel -------------------------------------------->
 	</header>
 	<main>
-<!--empieza articulo del single-->		
+<!----------------------------------- empieza articulo del single ---------------------------->		
 		<section class="grid__info">
 				<article class="grid__single article__single">
 					<h2 class="article__title">NEW SINGLE</h2><br>
 					<p><a href="discografia.html" class="article__single--text"><img src="img/productos/img_bubble.png" class="single__article--img" alt="Single digital Bubble"><br><span class="hover txt__white">Single digital<br>Bubble feat. Uta</span></p></a></p>
 				</article>
-<!--termina articulo del single y empieza el de informacion-->
+<!----------------------- termina articulo del single y empieza el de informacion --------------->
 				<article class="grid__news article__news">
 					<h2 class="article__title">INFORMACION</h2>
 					<h3 class="news__title" id="news">NEWS</h3>
@@ -86,10 +88,10 @@
 						<p class="border__bottom"><span class="text__small"> 2022.4.28 <br></span>“Bubble feat.Uta” Music Video公開</p></div>
 				</article>
 		</section>
-<!--termina articulo de informacion-->
+<!------------------ termina articulo de informacion ------------------>
 	</main>
 
-<!--tuve que sacar seccion "grid__live "porque no me dejaba manipularla de ninguna forma si la dejaba dentro de main-->
+<!---------------- tuve que sacar seccion "grid__live "porque no me dejaba manipularla de ninguna forma si la dejaba dentro de main -------------->
 		<section class="grid__live section__live">
 			<h4 id="liveTitulo" class="live__title live__title--gradient">Eve Live Tour 2022 Hiroto Nippon Budokan</h4>
 				<div class="live__box"><a href="contacto.html"><img src="img/toureve.png" class="live__img" alt="imagen del tour de eve"></a>
@@ -97,6 +99,21 @@
 		</section>
 	
 	<footer class="grid__footer">
+		<!--------------- footer carousel ---------------->
+		<div class="slider">
+			<div class="slide__track">
+				<div class="slider__div">
+					<img class="slider__div--img" src="img/footer_img_a.jpg" alt="carousel de imagenes">
+				</div>
+				<div class="slider__div">
+					<img class="slider__div--img" src="img/footer_img_a.jpg" alt="carousel de imagenes">
+				</div>
+				<div class="slider__div">
+					<img class="slider__div--img" src="img/footer_img_a.jpg" alt="carousel de imagenes">
+				</div>
+			</div>
+		</div>
+		<!--------------- footer carousel ---------------->
 		<div class="footer__btn"><a href="#inicio"><img src="img/logos/arribalogo.png" class="footer__btn--size scale" alt="logo hacia el inicio"></a></div>	
 		<div class="redes__box">
 			<h3 class="footer__title">Redes sociales</h3>
@@ -108,15 +125,14 @@
 		</div><br>
 				<img src="img/logos/copyright.png" class="copy">
 		
-<!--El formulario va a estar en la pagina de contacto y la tabla en la pagina de discografia-->	
+<!---------- El formulario va a estar en la pagina de contacto y la tabla en la pagina de discografia ------------------------->	
 
 	</footer>
-
 		<script src="js/wow.min.js"></script>
     	<script>
         	new WOW().init();
     	</script>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<!---------------- Option 1: Bootstrap Bundle with Popper ------------------------>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -32,3 +32,35 @@
     background-size: 100% 1px;
     padding: 1px;
 }
+
+/*--------------- footer carousel ----------------*/
+.slider{
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slide__track{display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(1500px * 6);
+}
+.slider .slider__div{
+    width: 100vw; 
+}
+.slider__div--img{
+    width: 100%;
+    margin: 1em 0;
+}
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{ 
+        -webkit-transform: translateX(calc(-200px * 3));
+        transform: translateX(calc(-200px * 3));
+    }
+}   
+
+/*--------------- footer carousel ----------------*/

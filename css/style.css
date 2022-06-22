@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 
-
-
-
-/*no tengo la nav en las versiones de mobile
-porque todavia no habiamos visto esa parte del contenido*/
-
-
-
-
-
-
-
-/*header*/
+/*------------------------------- index starts ------------------------------*/
+/*------------------------------- header starts ---------------------------------*/
 .header{
     text-align: center;}
 
@@ -25,10 +14,10 @@ porque todavia no habiamos visto esa parte del contenido*/
     width: 40%;
     margin: 1em 0 0 0;}
 
-/*header*/
+/*---------------------------------- header ends --------------------------------*/
 
-/*grids*/
-/*grids*/
+/*------------------------------------- index's grids starts ------------------------------*/
+
 
 .grid__nav{
     /*background-color: aqua;*/
@@ -64,9 +53,9 @@ porque todavia no habiamos visto esa parte del contenido*/
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-/*grids*/
+/*------------------------------------- index's grids ends ------------------------------*/
 
-/* body*/
+/*-------------------------------- body starts ------------------------------------*/
 
 
 .body {font-family: 'Lora', serif;
@@ -77,10 +66,10 @@ porque todavia no habiamos visto esa parte del contenido*/
     }
 
 .txt__white{color: aliceblue;}
-/*body*/
 
+/*------------------------------------- body ends ----------------------------------*/
 
-/*single index*/
+/*-------------------------------- single index starts -------------------------------*/
 .article__single{
     text-align: center;
 }
@@ -93,8 +82,11 @@ porque todavia no habiamos visto esa parte del contenido*/
     padding: 0 0 1em 0;}
 .article__single--text{text-align: center;
     text-decoration: none;}
-/*single index*/
-/*news index*/
+
+/*-------------------------------- single index ends -------------------------------*/
+
+/*------------------------------ news index starts -----------------------------------*/
+
 .news__title{font-size: 1.2em;
 padding: 1em;}
 .article__news{
@@ -109,14 +101,17 @@ padding: 1em;}
     font-size: 0.8em;}
 .border__bottom {border-bottom: 1px solid gray;
     padding: 1em;}
-/*news index*/
-/*live index*/
+
+/*----------------------------------- news index ends ------------------------------*/
+
+/*-------------------------------- live index starts ---------------------------------*/
+
 .section__live{
     text-align: center;}
 .live__title{
     background-color: rgba(155, 82, 40, 0.8);
     font-size: 1.3em;
-    padding: 0.1em;
+    padding: 0.5em;
     margin: 1em 0;
     box-shadow: 2px 2px 5px rgb(255, 255, 255);}
 .live__img{width: 55%;
@@ -136,9 +131,12 @@ padding: 1em;}
 /*.grid__live--video{display: none;
     width: 100%;}*/
 
-/*live index*/
+/*------------------------------ live index ends ----------------------------------*/
 
-/*footer*/
+/*----------------------------------- footer starts ---------------------------------*/
+.slider__div--img{
+    height: 5em;
+}
 .redes__box {display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,15 +150,16 @@ padding: 1em;}
     border-radius: 8px;}
 .footer__title{font-size: 1.3em;}
 .footer__btn{text-align: center;
-padding: 1em;}
+    padding: 1em;}
 .footer__btn--size{width: 3rem;}
 .redes__logo{width: 2em;}
 .copy{width: 1rem;}
-/*footer*/
 
-/*media query*/
+/*------------------------------------ footer ends ---------------------------------*/
 
-/*modificaciones para pantallas mayor a 768*/
+/*------------------------------- media query ---------------------------------*/
+
+/*-------------- modificaciones para pantallas mayor a 768 --------------------*/
 
 @media screen and (min-width: 768px){
     .grid{
@@ -201,7 +200,7 @@ padding: 1em;}
         padding: 2em 0 0 0;}
 }
 
-/* modificaciones para pantallas mayor a 1024*/
+/*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
 
 @media screen and (min-width: 1024px){
     .grid{
@@ -218,24 +217,18 @@ padding: 1em;}
     }
     
     .nav{
-        background-color: rgb(0, 0, 0, 0.1);
         top: 0;
         position: sticky;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: space-around;
         }
 
     .nav__logo{width: 80%;
-        padding: 5%;}
+    padding-left: 2em;}
     
     .nav__botones{
-        display: inline-flex;
-        margin-right: 30px;}
+        margin-right: 1em;}
     
     .hover:hover {
-        font-size: 600;
+        font-size: 400;
         color: slategray;}
 
     .text500{
@@ -257,7 +250,8 @@ padding: 1em;}
         margin: 0.5em 0;
         box-shadow: 2px 2px 5px rgb(255, 255, 255);}
 
-    .live__img{width: 50%;}
+    .live__img{width: 50%;
+        margin-bottom: 2em;}
     /*.grid__live--video{display: grid;}*/
     .live__box{
         padding: 1em;}
@@ -269,7 +263,11 @@ padding: 1em;}
         margin: 1em 3em;
         box-shadow: 2px 2px 5px rgb(179, 179, 179);}
     
+        .slider__div--img{
+            height: 7.7em;
+        }
 }
+
 
 @media screen and (min-width: 2560px){
     .text__small{ font-size: 0.8em;}
@@ -300,17 +298,15 @@ padding: 1em;}
         margin: 0.5em 0;
         box-shadow: 2px 2px 5px rgb(255, 255, 255);}
 }
-/*media query*/
+/*------------------------- media query ends --------------------------------*/
 
-/*Index*/
-/*Biografia*/
+/*----------------------------- Index ends ----------------------------------*/
+
+/*------------------------------ Biografia starts ---------------------------*/
+
+/*------------------------- biografia's grids starts ------------------------*/
 
 
-/*bio*/
-.grid__bio{
-    /*background-color: blue;*/
-    grid-area: bio;
-}
 .title{font-weight: 500;
     font-size: 1.8rem;
     text-align: center;
@@ -335,9 +331,8 @@ padding: 1em;}
     line-height: 1.3em;
     word-spacing: 0.5em;
     padding: 1em 2em;}
-/*grids*/
-/*grids*/
 
+/*------------------------- biografia's grids starts ------------------------*/
 
 .grid__biografia{
     height: 100vh;
@@ -351,11 +346,16 @@ padding: 1em;}
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 2fr 1fr;
 }
+.grid__bio{
+    /*background-color: blue;*/
+    grid-area: bio;
+}
 
-/*grids*/
-/*media query*/
+/*------------------------- biografia's grids ends --------------------------*/
 
-/*modificaciones para pantallas mayor a 1024*/
+/*--------------------------- media query starts ----------------------------*/
+
+/*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
 
 @media screen and (min-width: 1024px){
     .grid__biografia{
@@ -377,6 +377,10 @@ padding: 1em;}
         line-height: 1.3em;
         word-spacing: 0.5em;
         padding: 1em 2em; text-align: left;}
+    
+        .slider__div--img{
+            height: 7.7em;
+        }
 }
 @media screen and (min-width: 2560px){
     .section__title{font-weight: 400;
@@ -391,20 +395,14 @@ padding: 1em;}
         padding: 1em 2em; 
         text-align: left;}
 }
-/*media query*/
-/*bio*/
 
 
+/*------------------- media query ends --------------------------------------*/
 
+/*-------------------------------- biografia ends --------------------------*/
 
+/*------------------------------ discografia starts -------------------------*/
 
-/*discografia*/
-.grid__discos{
-    /*background-color: tomato;*/
-    grid-area: discos;
-}
-.grid__video{/*background-color: darkslateblue;*/
-    grid-area: video;}
 .discografia{text-align: center;}
 .box {
     text-align: center;
@@ -423,7 +421,9 @@ padding: 1em;}
 .discografia__video{padding: 1em 2em;
 text-align: center;}
 .discografia__video--size{width: 20em;}
-/*grids*/
+
+/*------------------ discografia's grids starts -----------------------------*/
+
 .grid__discografia{
     height: 100vh;
     margin: 0;
@@ -437,11 +437,18 @@ text-align: center;}
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
-/*grids*/
+.grid__discos{
+    /*background-color: tomato;*/
+    grid-area: discos;
+}
+.grid__video{/*background-color: darkslateblue;*/
+    grid-area: video;}
 
-/*media query*/
+/*----------------------- discografia's grids ends ---------------------------*/
 
-/*modificaciones para pantallas mayor a 768*/
+/*--------------------------- media query starts --------------------------*/
+
+/*-------------- modificaciones para pantallas mayor a 768 -------------------*/
 
 @media screen and (min-width: 768px){
     .grid__discos{
@@ -456,7 +463,7 @@ text-align: center;}
     .discografia__video--size{width: 28em;}
 }
 
-/* modificaciones para pantallas mayor a 1024*/
+/*---------------- modificaciones para pantallas mayor a 1024 --------------*/
 
 @media screen and (min-width: 1024px){
     .grid__discografia{
@@ -474,7 +481,13 @@ text-align: center;}
     }
     .box{margin: 1em;}
     .discografia__video--size{width: 45em;}
+    .slider__div--img{
+        height: 7.7em;
+    }
 }
+
+/*---------------- modificaciones para pantallas mayor a 2560 --------------*/
+
 @media screen and (min-width: 2560px){
     .box{margin: 3em;}
     .discografia__img{
@@ -482,17 +495,12 @@ text-align: center;}
     }
 }
 
-/*media query*/
-/*discografia*/
+/*---------------------- media query ends ---------------------------------*/
 
+/*------------------------ discografia ends ------------------------------*/
 
+/*------------------------- merch starts -------------------------------------*/
 
-/*merch*/
-
-.grid__merch{
-    /*background-color: tomato;*/
-    grid-area: merch;
-}
 
 .box__merch {
     text-align: center;
@@ -509,7 +517,7 @@ text-align: center;}
     width: 10em;
 }
 
-/*grids*/
+/*---------------------- merch's grids starts ------------------------------*/
 .grid__merchandising{
     height: 100vh;
     margin: 0;
@@ -522,11 +530,15 @@ text-align: center;}
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 2fr 1fr;
 }
-/*grids*/
+.grid__merch{
+    /*background-color: tomato;*/
+    grid-area: merch;
+}
+/*------------------------- merch's grids ends --------------------------*/
 
-/*media query*/
+/*--------------------------- media query -----------------------------------*/
 
-/*modificaciones para pantallas mayor a 768*/
+/*------------------- modificaciones para pantallas mayor a 768 -------------*/
 
 @media screen and (min-width: 768px){
     .grid__merch{
@@ -541,7 +553,7 @@ text-align: center;}
     .box__merch{margin: 1em;}
 }
 
-/* modificaciones para pantallas mayor a 1024*/
+/*------------- modificaciones para pantallas mayor a 1024 -----------------*/
 
 @media screen and (min-width: 1024px){
     .grid__merchandising{
@@ -557,24 +569,18 @@ text-align: center;}
         grid-template-rows: 1fr 1fr 2fr 1fr;
     }
     .box__merch{margin: 1em;}
+    .slider__div--img{
+        height: 7.7em;
+    }
 }
 
 
-/*media query*/
-/*merch*/
+/*-------------------------- media query ends -------------------------------*/
 
-/*contact*/
+/* ---------------------------- merch ends -----------------------------------*/
 
+/*--------------------------- contact starts -------------------------------*/
 
-.grid__form{
-    /*background-color: tomato;*/
-    grid-area: form;
-    margin: 0 3em 2em 3em;
-    text-align: center;
-}
-.grid__map{/*background-color: darkslateblue;*/
-    grid-area: map;
-    text-align: center;}
 .form__title{font-weight: 500;
         font-size: 1.4rem;
         margin: 0 1em;
@@ -594,7 +600,8 @@ text-align: center;}
     line-height: 1.9em;
     color: moccasin;}
 
-/*grids*/
+/*-------------------------- contact's grids starts ---------------------*/
+
 .grid__contacto{
     height: 100vh;
     margin: 0;
@@ -608,12 +615,22 @@ text-align: center;}
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
 }
-/*grids*/
+.grid__form{
+    /*background-color: tomato;*/
+    grid-area: form;
+    margin: 0 3em 2em 3em;
+    text-align: center;
+}
+.grid__map{/*background-color: darkslateblue;*/
+    grid-area: map;
+    text-align: center;}
 
-/*media query*/
+/*------------------------- contact's grids ends --------------------------*/
+
+/*---------------------------- media query -------------------------------*/
 
 
-/* modificaciones para pantallas mayor a 1024*/
+/*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
 
 @media screen and (min-width: 1024px){
     .grid__contacto{
@@ -634,7 +651,12 @@ text-align: center;}
     align-content: center;
     justify-content: center;
     margin: 9em 0 0 0;}
+
+    .slider__div--img{
+        height: 7.7em;
+    }
 }
+/*--------------- modificaciones para pantallas mayor a 2560 ----------------*/
 @media screen and (min-width: 2560px){
     .form__subtitle{font-size: 2em;
         line-height: 1.9em;}
@@ -643,6 +665,7 @@ text-align: center;}
         
 }
 
-/*media query*/
-/*contact*/
+/*--------------------------- media query ends -----------------------------*/
+
+/*----------------------------- contact ends --------------------------------*/
 
