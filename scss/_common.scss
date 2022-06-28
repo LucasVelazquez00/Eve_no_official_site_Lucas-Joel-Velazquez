@@ -1,0 +1,328 @@
+
+/*------------------------------- index starts ------------------------------*/
+/*------------------------------- header starts ---------------------------------*/
+
+.header {
+  text-align: center;
+}
+
+.header__img {
+  width: 100%;
+  display: none;
+}
+
+.header__logo {
+  width: 40%;
+  margin: 1em 0 0 0;
+}
+
+/*---------------------------------- header ends --------------------------------*/
+
+.text500 {
+  font-family: $font2;
+  font-size: $fontM;
+  text-decoration: none;
+  color: $font-color;
+}
+
+/*-------------------------------- body starts ------------------------------------*/
+
+.body {
+  font-family: $font1;
+  font-size: $fontSm;
+  color: $font-color;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-image: url(../img/background/blackcolor.png);
+}
+
+.txt__white {
+  color: $font-color;
+}
+
+/*------------------------------------- body ends ----------------------------------*/
+
+/*-------------------------------- single index starts -------------------------------*/
+
+.article__single {
+  text-align: center;
+  .single__article--img {
+    width: 60%;
+    padding: 0 0 1em 0;
+  }
+}
+
+.article__title {
+  font-family: $font2;
+  font-size: $fontL;
+  text-align: center;
+  display: block;
+}
+
+
+.article__single--text {
+  font-family: $font2;
+  font-size: $fontSm;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*-------------------------------- single index ends -------------------------------*/
+
+/*------------------------------ news index starts -----------------------------------*/
+
+.news__title {
+  font-family: $font2;
+  font-size: $fontM;
+  padding: 1em;
+}
+
+.article__news {
+  padding: 0 0 0 2em;
+  .text__news {
+    font-family: $font1;
+    font-size: $fontSm;
+    padding: 0 1em 0 0.5em;
+    line-height: 1.3em;
+    word-spacing: 0.1em;
+    .border__bottom {
+      border-bottom: 1px solid gray;
+      padding: 1em;
+    }
+  }
+}
+
+.text__small {
+  font-size: $fontXs;
+}
+
+/*----------------------------------- news index ends ------------------------------*/
+
+/*-------------------------------- live index starts ---------------------------------*/
+
+.section__live {
+  text-align: center;
+  .live__title {font-family: $font2;
+    font-size: $fontXL;
+    padding: 0.5em;
+    margin: 1em 0;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+  .live__img {
+    width: 55%;
+    box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  }
+  .live__text {
+    font-family: $font1;
+    font-size: $fontSm;
+    word-spacing: 0.2em;
+    line-height: 1.5em;
+    padding: 1em;
+    margin: 1em 0;
+  }
+}
+
+/*.grid__live--video{display: none;
+    width: 100%;}*/
+
+/*------------------------------ live index ends ----------------------------------*/
+
+/*----------------------------------- footer starts ---------------------------------*/
+
+.slider__div--img {
+  height: 5em;
+}
+.footer__btn {
+  text-align: center;
+  padding: 1em;
+}
+.footer__btn--size {
+  width: 3rem;
+}
+
+/*-------------------- Aquí he aplicado nesting*/
+.redes__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 4em;
+  margin: 0 2em;
+  background-color: $box-color;
+  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  .footer__title {font-family: $font2;
+    font-size: $fontL;
+    color: $font-color;
+}
+  .redes__link{
+    display: flex;
+    list-style: none;
+    
+    .redes__logo {
+      width: 2em;
+      margin-right: 13px;
+      &:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+/*------------------- Aquí he aplicado nesting*/
+
+.copy {
+  width: 1rem;
+}
+
+/*------------------------------------ footer ends ---------------------------------*/
+
+
+
+/*----------------------------- Index ends ----------------------------------*/
+
+
+
+/*------------------------------ Biografia starts ---------------------------*/
+
+
+
+.title {
+  font-family: $font2;
+  font-weight: 500;
+  font-size: $fontXL;
+  text-align: center;
+  display: block;
+  padding: 1em;
+}
+
+.section__title {
+  font-weight: 400;
+  font-size: $fontXL;
+  text-align: center;
+  display: block;
+  padding: 1em;
+}
+
+.bio__img {
+  width: 100%;
+}
+
+.biografia__article {
+  border-radius: 5px;
+  background-color: $box-color;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  .text__biografia {
+    font-size: $fontXs;
+    line-height: 1.3em;
+    word-spacing: 0.5em;
+    padding: 1em 2em;
+  }
+}
+
+
+/*-------------------------------- biografia ends --------------------------*/
+
+/*------------------------------ discografia starts -------------------------*/
+
+.discografia {
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+  font-size: $fontM;
+  border-radius: 10px;
+  background-color: $box-color;
+  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  padding: 20px 20px 10px 20px;
+  margin: 10px;
+}
+
+.discografia__img {
+  width: 15em;
+}
+
+.discografia__video {
+  padding: 1em 2em;
+  text-align: center;
+}
+
+.discografia__video--size {
+  width: 20em;
+}
+
+
+
+/*------------------------ discografia ends ------------------------------*/
+
+/*------------------------- merch starts -------------------------------------*/
+
+.box__merch {
+  text-align: center;
+  font-size: $fontM;
+  background-color: $box-color;
+  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  border-radius: 15px;
+  padding: 1em;
+  margin: 4em;
+}
+
+.merch__img {
+  width: 10em;
+}
+
+
+
+/* ---------------------------- merch ends -----------------------------------*/
+
+/*--------------------------- contact starts -------------------------------*/
+
+.form__title {
+  font-weight: 500;
+  font-size: $fontL;
+  margin: 0 1em;
+  padding: 2em 0;
+  display: block;
+}
+
+.input__btn {
+  color: $box-color;
+  margin: 10px;
+  width: 100px;
+  border-radius: 2px;
+  border: 0;
+  background: linear-gradient(to top, rgb(199, 199, 199), rgb(128, 128, 128));
+}
+
+.contact__form {
+  margin: 1em;
+  padding: 1em;
+}
+
+.contact__form--content {
+  padding: 1em;
+  line-height: 1.5em;
+}
+
+.form__subtitle {
+  font-size: $fontM;
+  line-height: 1.9em;
+  color: rgb(247, 220, 174);
+}
+
+/*----------------------------- contact ends --------------------------------*/

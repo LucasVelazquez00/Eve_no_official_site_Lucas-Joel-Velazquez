@@ -1,0 +1,502 @@
+/*------------------------------------- index's grids starts ------------------------------*/
+
+.grid__nav {
+    /*background-color: aqua;*/
+    grid-area: nav;
+  }
+  
+  .grid__header {
+    /*background-color: blue;*/
+    grid-area: header;
+  }
+  
+  .grid__info {
+    /*background-color: blueviolet;*/
+    grid-area: info;
+  }
+  
+  .grid__live {
+    /*background-color: brown;*/
+    grid-area: live;
+  }
+  
+  .grid__footer {
+    /*background-color: burlywood;*/
+    grid-area: footer;
+  }
+  
+  .grid__single {
+    /*background-color: yellow;*/
+    grid-area: single;
+    display: none;
+  }
+  
+  .grid__news {
+    /*background-color: yellowgreen;*/
+    grid-area: news;
+  }
+  
+  .grid {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav" "header" "live" "info" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  /*------------------------------------- index's grids ends ------------------------------*/
+
+  /*-------------- modificaciones para pantallas mayor a 768 --------------------*/
+
+@media screen and (min-width: 768px) {
+    .grid {
+      grid-template-areas: "nav" "header" "live" "info" "footer";
+    }
+  
+    .grid__single {
+      display: grid;
+    }
+  
+    .grid__info {
+      display: grid;
+      grid-template-areas: "news single";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+  
+    .header__logo {
+      width: 30%;
+    }
+  
+    .section__live .live__title {
+      font-size: $fontXL;
+      margin: 1em 1em;
+      margin: 1em 0;
+    }
+  
+    .section__live .live__text {
+      font-size: $fontSm;
+      padding: 0.8em 1.1em;
+      margin: 1em 0;
+    }
+  
+    .section__live .live__img {
+      width: 50%;
+    }
+  
+    .header__logo {
+      margin: 0;
+      padding: 2em 0 0 0;
+    }
+    .article__single {
+      margin-bottom: 5em;
+    }
+  }
+  
+  /*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
+  
+  @media screen and (min-width: 1024px) {
+    .grid {
+      grid-template-areas: "nav" "header" "info" "live" "footer";
+      grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    }
+  
+    .header__img {
+      display: grid;
+    }
+  
+    .nav {
+      top: 0;
+      position: sticky;
+    }
+  
+    .nav__logo {
+      width: 80%;
+      padding-left: 2em;
+    }
+  
+    .nav__botones {
+      margin-right: 1em;
+    }
+  
+    .hover:hover {
+      font-size: 400;
+      color: slategray;
+    }
+  
+    .text500 {
+      font-family: $font2;
+      font-size: $fontM;
+      text-decoration: none;
+    }
+  
+    .header__logo {
+      width: 17%;
+      margin: 0 0 2em 0;
+    }
+  
+    .grid__info {
+      margin: 2em 0 2em 1em;
+    }
+  
+    .live__title {color: $font-color;
+      font-size: $fontXXL;
+      padding: 0.4em;
+      margin: 0.5em 0;
+      box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    }
+  
+    .live__img {
+      width: 50%;
+      margin-bottom: 2em;
+    }
+  
+    /*.grid__live--video{display: grid;}*/
+  
+    .live__box {
+      padding: 1em;
+    }
+  
+    .live__text {
+      border-radius: 5px;
+      font-size:$fontSm;
+      padding: 1em;
+      margin: 1em 3em;
+      box-shadow: 2px 2px 5px rgb(179, 179, 179);
+    }
+  
+    .slider__div--img {
+      height: 7.7em;
+    }
+    .article__single {
+      margin-bottom: auto;
+    }
+  }
+  
+  @media screen and (min-width: 2560px) {
+    .text__small {
+      font-size: $fontXs;
+    }
+  
+    .text__news {
+      font-size: $fontL;
+      padding: 0 1em 0 1em;
+      line-height: 1.3em;
+      word-spacing: 0.1em;
+    }
+  
+    .article__title {
+      font-weight: 500;
+      font-size: $fontXL;
+      text-align: center;
+      display: block;
+    }
+  
+    .text500 {
+      font-weight: 500;
+      font-size: $fontL;
+      text-decoration: none;
+    }
+  
+    .live__text {
+      border-radius: 5px;
+      font-size: $fontL;
+      padding: 0.5em;
+      margin: 1em 3em;
+      box-shadow: 2px 2px 5px rgb(179, 179, 179);
+    }
+  
+    .live__title {
+      font-size: $fontXXL;
+      padding: 0.4em;
+      margin: 0.5em 0;
+      box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    }
+  }
+  
+  /*------------------------- media query ends --------------------------------*/
+  
+
+  /*------------------------- biografia's grids starts ------------------------*/
+
+.grid__biografia {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav" "header" "bio" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+  }
+  
+  .grid__bio {
+    /*background-color: blue;*/
+    grid-area: bio;
+  }
+  
+  /*------------------------- biografia's grids ends --------------------------*/
+  /*--------------------------- media query starts ----------------------------*/
+
+/*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
+
+@media screen and (min-width: 1024px) {
+    .grid__biografia {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-areas: "nav" "header" "bio" "footer";
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 2fr 1fr;
+      text-align: center;
+    }
+  
+    .bio__img {
+      width: 80%;
+    }
+  
+    .biografia__article .text__biografia {
+      font-size: $fontSm;
+      line-height: 1.3em;
+      word-spacing: 0.5em;
+      padding: 1em 2em;
+      text-align: left;
+    }
+  
+    .slider__div--img {
+      height: 7.7em;
+    }
+  }
+  
+  @media screen and (min-width: 2560px) {
+    .section__title {
+      font-weight: 400;
+      font-size: $fontXXL;
+      text-align: center;
+      display: block;
+      padding: 1em;
+    }
+  
+    .text__biografia {
+      font-size: $fontL;
+      line-height: 1.2em;
+      word-spacing: 0.3em;
+      padding: 1em 2em;
+      text-align: left;
+    }
+  }
+  
+  /*------------------- media query ends --------------------------------------*/
+
+  /*------------------ discografia's grids starts -----------------------------*/
+
+.grid__discografia {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav" "header" "discos" "video" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+  }
+  
+  .grid__discos {
+    /*background-color: tomato;*/
+    grid-area: discos;
+  }
+  
+  .grid__video {
+    /*background-color: darkslateblue;*/
+    grid-area: video;
+  }
+  
+  /*----------------------- discografia's grids ends ---------------------------*/
+  
+  /*--------------------------- media query starts --------------------------*/
+  
+  /*-------------- modificaciones para pantallas mayor a 768 -------------------*/
+  
+  @media screen and (min-width: 768px) {
+    .grid__discos {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .discografia__img {
+      width: 15em;
+    }
+  
+    .discografia__video--size {
+      width: 28em;
+    }
+  }
+  
+  /*---------------- modificaciones para pantallas mayor a 1024 --------------*/
+  
+  @media screen and (min-width: 1024px) {
+    .grid__discografia {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-areas: "nav" "header" "discos" "video" "footer";
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    }
+  
+    .box {
+      margin: 1em;
+    }
+  
+    .discografia__video--size {
+      width: 45em;
+    }
+  
+    .slider__div--img {
+      height: 7.7em;
+    }
+  }
+  
+  /*---------------- modificaciones para pantallas mayor a 2560 --------------*/
+  
+  @media screen and (min-width: 2560px) {
+    .box {
+      margin: 3em;
+    }
+  
+    .discografia__img {
+      width: 19em;
+    }
+  }
+  
+  /*---------------------- media query ends ---------------------------------*/
+
+  /*---------------------- merch's grids starts ------------------------------*/
+
+.grid__merchandising {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav" "header" "merch" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+  }
+  
+  .grid__merch {
+    /*background-color: tomato;*/
+    grid-area: merch;
+  }
+  
+  /*------------------------- merch's grids ends --------------------------*/
+  
+  /*--------------------------- media query -----------------------------------*/
+  
+  /*------------------- modificaciones para pantallas mayor a 768 -------------*/
+  
+  @media screen and (min-width: 768px) {
+    .grid__merch {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .merch__img {
+      width: 15em;
+    }
+  
+    .box__merch {
+      margin: 1em;
+    }
+  }
+  
+  /*------------- modificaciones para pantallas mayor a 1024 -----------------*/
+  
+  @media screen and (min-width: 1024px) {
+    .grid__merchandising {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-areas: 'nav' "header" "merch" "footer";
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 2fr 1fr;
+    }
+  
+    .box__merch {
+      margin: 1em;
+    }
+  
+    .slider__div--img {
+      height: 7.7em;
+    }
+  }
+  
+  /*-------------------------- media query ends -------------------------------*/
+
+
+  /*-------------------------- contact's grids starts ---------------------*/
+
+.grid__contacto {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "nav" "header" "form" "map" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+  }
+  
+  .grid__form {
+    /*background-color: tomato;*/
+    grid-area: form;
+    margin: 0 3em 2em 3em;
+    text-align: center;
+  }
+  
+  .grid__map {
+    /*background-color: darkslateblue;*/
+    grid-area: map;
+    text-align: center;
+  }
+  
+  /*------------------------- contact's grids ends --------------------------*/
+  
+  /*---------------------------- media query -------------------------------*/
+  
+  /*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
+  
+  @media screen and (min-width: 1024px) {
+    .grid__contacto {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-areas: "nav nav" "header header" "form map" "form map" "footer footer";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    }
+  
+    .grid__map {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      margin: 9em 0 0 0;
+    }
+  
+    .slider__div--img {
+      height: 7.7em;
+    }
+  }
+  
+  /*--------------- modificaciones para pantallas mayor a 2560 ----------------*/
+  @media screen and (min-width: 2560px) {
+    .form__subtitle {
+      font-size: $fontXXL;
+      line-height: 1.9em;
+    }
+  
+    .map {
+      width: 50em;
+      height: 25em;
+    }
+  }
+  
+  /*--------------------------- media query ends -----------------------------*/
