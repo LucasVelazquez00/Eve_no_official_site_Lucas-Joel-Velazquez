@@ -106,13 +106,11 @@
     font-size: $fontXL;
     padding: 0.5em;
     margin: 1em 0;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
   }
   .live__img {
     width: 55%;
-    box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+    @include shadow;
   }
   .live__text {
     font-family: $font1;
@@ -124,8 +122,6 @@
   }
 }
 
-/*.grid__live--video{display: none;
-    width: 100%;}*/
 
 /*------------------------------ live index ends ----------------------------------*/
 
@@ -150,9 +146,7 @@
   padding: 0.8em 4em;
   margin: 0 2em;
   background-color: $box-color;
-  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  @include shadow;
   box-sizing: border-box;
   border-radius: 8px;
 
@@ -184,13 +178,10 @@
 /*------------------------------------ footer ends ---------------------------------*/
 
 
-
 /*----------------------------- Index ends ----------------------------------*/
 
 
-
 /*------------------------------ Biografia starts ---------------------------*/
-
 
 
 .title {
@@ -219,9 +210,7 @@
   background-color: $box-color;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  @include shadow;
   .text__biografia {
     font-size: $fontXs;
     line-height: 1.3em;
@@ -244,26 +233,23 @@
   font-size: $fontM;
   border-radius: 10px;
   background-color: $box-color;
-  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+  @include shadow;
   padding: 20px 20px 10px 20px;
   margin: 10px;
+  .discografia__img {
+    width: 15em;
+  }
 }
 
-.discografia__img {
-  width: 15em;
-}
+
 
 .discografia__video {
   padding: 1em 2em;
   text-align: center;
+  .discografia__video--size {
+    width: 20em;
+  }
 }
-
-.discografia__video--size {
-  width: 20em;
-}
-
 
 
 /*------------------------ discografia ends ------------------------------*/
@@ -274,17 +260,16 @@
   text-align: center;
   font-size: $fontM;
   background-color: $box-color;
-  box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
   border-radius: 15px;
   padding: 1em;
   margin: 4em;
+  @include shadow;
+  .merch__img {
+    width: 10em;
+  }
 }
 
-.merch__img {
-  width: 10em;
-}
+
 
 
 
@@ -297,32 +282,47 @@
   font-size: $fontL;
   margin: 0 1em;
   padding: 2em 0;
-  display: block;
-}
-
-.input__btn {
-  color: $box-color;
-  margin: 10px;
-  width: 100px;
-  border-radius: 2px;
-  border: 0;
-  background: linear-gradient(to top, rgb(199, 199, 199), rgb(128, 128, 128));
-}
-
+  display: block;}
+  
 .contact__form {
   margin: 1em;
   padding: 1em;
+  .contact__form--content {
+    padding: 1em;
+    line-height: 1.5em;
+    .form__subtitle {
+      font-size: $fontM;
+      line-height: 1.9em;
+      color: map-get($map: $colors, $key: 'cinco');
+    }
+    .input__btn {
+      color: $box-color;
+      margin: 10px;
+      width: 130px;
+      border-radius: 2px;
+      border: 0;
+      background: linear-gradient(to top, rgb(199, 199, 199), rgb(128, 128, 128));
+    }
+  }
 }
 
-.contact__form--content {
-  padding: 1em;
-  line-height: 1.5em;
-}
 
-.form__subtitle {
-  font-size: $fontM;
-  line-height: 1.9em;
-  color: rgb(247, 220, 174);
+/*----------------------------- extend -----------------------------------*/
+.input__btn--send{
+  @extend .input__btn;
+  width: 80px;
+  background: linear-gradient(to bottom, rgb(201, 201, 201), rgb(20, 20, 20));
+  color: $font-color;
+  &:hover {
+    background: map-get($map: $colors, $key: 'cinco');
+    cursor: pointer;
+  }
 }
+/*----------------------------- extend -----------------------------------*/
+
+
+
+
+
 
 /*----------------------------- contact ends --------------------------------*/

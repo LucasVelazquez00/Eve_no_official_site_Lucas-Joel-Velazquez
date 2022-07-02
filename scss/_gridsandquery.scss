@@ -144,7 +144,7 @@
       font-size: $fontXXL;
       padding: 0.4em;
       margin: 0.5em 0;
-      box-shadow: 2px 2px 5px rgb(255, 255, 255);
+      box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
     }
   
     .live__img {
@@ -163,7 +163,7 @@
       font-size:$fontSm;
       padding: 1em;
       margin: 1em 3em;
-      box-shadow: 2px 2px 5px rgb(179, 179, 179);
+      box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
     }
   
     .slider__div--img {
@@ -204,14 +204,14 @@
       font-size: $fontL;
       padding: 0.5em;
       margin: 1em 3em;
-      box-shadow: 2px 2px 5px rgb(179, 179, 179);
+      box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
     }
   
     .live__title {
       font-size: $fontXXL;
       padding: 0.4em;
       margin: 0.5em 0;
-      box-shadow: 2px 2px 5px rgb(255, 255, 255);
+      box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
     }
   }
   
@@ -326,7 +326,7 @@
       width: 15em;
     }
   
-    .discografia__video--size {
+    .discografia__video .discografia__video--size {
       width: 28em;
     }
   }
@@ -347,7 +347,7 @@
       margin: 1em;
     }
   
-    .discografia__video--size {
+    .discografia__video .discografia__video--size {
       width: 45em;
     }
   
@@ -399,14 +399,14 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
-  
-    .merch__img {
-      width: 15em;
-    }
-  
-    .box__merch {
+      .box__merch {
       margin: 1em;
     }
+    .box__merch .merch__img {
+      width: 13em;
+    }
+  
+
   }
   
   /*------------- modificaciones para pantallas mayor a 1024 -----------------*/
@@ -485,6 +485,8 @@
       height: 7.7em;
     }
   }
+
+  
   
   /*--------------- modificaciones para pantallas mayor a 2560 ----------------*/
   @media screen and (min-width: 2560px) {

@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Eve - NO OFFICIAL SITE</title>
+	<meta name="description" content="Formulario de compra de entradas para el Eve Live Tour 2022 Hiroto Nippon Budokan, también vea el mapa para localizarse donde se realizará este evento">
+	<meta name="author" content="Lucas Velazquez">
+	<meta name="keywords" content="eve, news, discografia, contacto, merchandising, biografia, venta de entradas del tour 2022, entrega de entradas">
+	<title>Venta de entradas del tour 2022</title>
 	<link rel="shortcut icon" href="img/logos/evefavicon.jpg">
 	<!-- Bootstrap CSS --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,47 +16,34 @@
 	<!------------------------------------------ nav ----------------------------------->
 	<nav class="navbar navbar-expand-lg navbar-dark grid__nav nav bg-transparent">
 		<div class="container-fluid">
-			<a href="index.html">
-				<img src="img/logos/evelogo2.png" class="nav__logo wow fadeIn " alt="logo de eve"></a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-			<ul class="navbar-nav barra__botones align-items-center ">
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="biografia.html">Biografia</a>
-			  </li>
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="discografia.html">Discografia</a>
-			  </li>
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="merchandising.html">Merchandising</a>
-			  </li>
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="contacto.html">Contacto</a>
-			  </li>
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#news">News</a>
-			  </li>
-			  <li class="nav-item nav__botones">
-				<a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#liveTitulo">Live</a>
-			  </li>
-			</ul>
-		  </div>
+			<a href="index.html"><img src="img/logos/evelogo2.png" class="nav__logo wow fadeIn " alt="logo de eve"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav barra__botones align-items-center ">
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="biografia.html">Biografia</a></li>
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="discografia.html">Discografia</a></li>
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="merchandising.html">Merchandising</a></li>
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="contacto.html">Contacto</a></li>
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#news">News</a></li>
+					<li class="nav-item nav__botones"><a class="nav-link active text500 hover underline scale" aria-current="page" href="index.html#liveTitulo">Live</a></li>
+				</ul>
+			</div>
 		</div>
-	  </nav>
-	  <!------------------------------------------ nav ----------------------------------->
+	</nav>
+	<!------------------------------------------ nav ----------------------------------->
 	<header class="grid__header header">
 		<img src="img/logos/logo_eve.png" class="header__logo" id="inicio">
 		<h2 class="title">CONTACTO</h2>
 	</header>
 	<main>
 	
-		<h3 class="text500 form__title">VENTA DE ENTRADAS DEL TOUR 2022</h3>
+		<h1 class="text500 form__title">VENTA DE ENTRADAS DEL TOUR 2022</h1>
 		<section>
 			<div class="grid__form">
 				<!--empieza form-->
-			<form action="envio.php" method="post" class=>
+			<form action="envio.php" method="post" class= "contact__form">
 				<fieldset class="contact__form--content">
 					<legend class="form__subtitle">Info de contacto</legend>
 					<div>
@@ -87,8 +77,8 @@
 					<label for="direccion">Dirección de domicilio</label>
 					<textarea name="direccion" id="direccion" cols="10" rows="1"></textarea>
 				</fieldset>
-				<input type="submit" value="enviar" class="input__btn hover">
-				<input type="reset" value="cancelar" class="input__btn hover"> 
+				<input type="submit" value="enviar" class="input__btn--send hover">
+				<input type="reset" value="cancelar" class="input__btn--send hover"> 
 			</form></div>
 		<!-- termina form -->
 		</section>
@@ -129,10 +119,10 @@
 
 	</footer>
 	<script src="js/wow.min.js"></script>
-    	<script>
-        	new WOW().init();
-    	</script>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+Titulos: En general a casi todos los archivos les cambié excepto el del index.
+Keywords: A todos les puse el nombre de las demas paginas exceptuando la palabra "index",
+En cada una de las paginas hay keywords acorde el contenido en sí
+Descripción: Han sido agregadas descripciones dependiendo del contenido en que haya dentro de la pagina
+y/o hice un enfasis en algo particular

@@ -8,7 +8,23 @@ $fontL:1.4em;
 $fontXL:1.9em;
 $fontXXL:2.3em;
 $font-color: rgb(245, 245, 245);
-
+$box-color: rgb(15, 13, 13);
 //vars
 
-$box-color: rgb(15, 13, 13);
+
+//mixins
+@mixin shadow {
+    box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
+}
+
+//map
+
+$colors: (
+    'uno': rgb(245, 245, 245),
+    'dos': rgb(15, 13, 13),
+    'tres': radial-gradient(circle, rgba(158,77,0,1) 0%, rgba(93,45,0,1) 100%),
+    'cuatro': linear-gradient(148deg, rgba(6,6,23,1) 2%, rgba(73,73,134,1) 95%),
+    'cinco': rgb(247, 220, 174)
+)
