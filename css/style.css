@@ -220,6 +220,7 @@
 .form__title {
   font-weight: 500;
   font-size: 1.4em;
+  text-align: center;
   margin: 0 1em;
   padding: 2em 0;
   display: block; }
@@ -232,19 +233,27 @@
     line-height: 1.5em; }
     .contact__form .contact__form--content .form__subtitle {
       font-size: 1.2em;
-      line-height: 1.9em;
+      line-height: 2em;
       color: #f7dcae; }
+    .contact__form .contact__form--content .form__input-text {
+      margin: 1em 0;
+      width: 16em;
+      height: 2.5em; }
+    .contact__form .contact__form--content .form__input-radio {
+      margin: 1em 1em; }
     .contact__form .contact__form--content .input__btn, .contact__form .contact__form--content .input__btn--send {
       color: #0f0d0d;
-      margin: 10px;
-      width: 130px;
+      margin: 1em 1em;
+      width: 15em;
+      height: 2em;
       border-radius: 2px;
       border: 0;
       background: linear-gradient(to top, #c7c7c7, gray); }
 
 /*----------------------------- extend -----------------------------------*/
 .input__btn--send {
-  width: 80px;
+  width: 8em;
+  height: 2.5em;
   background: linear-gradient(to bottom, #c9c9c9, #141414);
   color: whitesmoke; }
   .input__btn--send:hover {
@@ -587,7 +596,10 @@
     justify-content: center;
     margin: 9em 0 0 0; }
   .slider__div--img {
-    height: 7.7em; } }
+    height: 7.7em; }
+  .map {
+    width: 30em;
+    height: 30em; } }
 
 /*--------------- modificaciones para pantallas mayor a 2560 ----------------*/
 @media screen and (min-width: 2560px) {

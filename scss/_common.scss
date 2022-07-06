@@ -280,6 +280,7 @@
 .form__title {
   font-weight: 500;
   font-size: $fontL;
+  text-align: center;
   margin: 0 1em;
   padding: 2em 0;
   display: block;}
@@ -292,13 +293,23 @@
     line-height: 1.5em;
     .form__subtitle {
       font-size: $fontM;
-      line-height: 1.9em;
+      line-height: 2em;
       color: map-get($map: $colors, $key: 'cinco');
     }
+    .form__input-text{
+      margin: 1em 0;
+      width: 16em;
+      height: 2.5em;
+    }
+    .form__input-radio{
+      margin: 1em 1em;
+    }
+    
     .input__btn {
       color: $box-color;
-      margin: 10px;
-      width: 130px;
+      margin: 1em 1em;
+      width: 15em;
+      height: 2em;
       border-radius: 2px;
       border: 0;
       background: linear-gradient(to top, rgb(199, 199, 199), rgb(128, 128, 128));
@@ -310,7 +321,8 @@
 /*----------------------------- extend -----------------------------------*/
 .input__btn--send{
   @extend .input__btn;
-  width: 80px;
+  width: 8em;
+  height: 2.5em;
   background: linear-gradient(to bottom, rgb(201, 201, 201), rgb(20, 20, 20));
   color: $font-color;
   &:hover {

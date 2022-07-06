@@ -48,14 +48,14 @@
 					<legend class="form__subtitle">Info de contacto</legend>
 					<div>
 						<label for="nombre">Nombre</label><br>
-						<input type="text" name="nombre" id="nombre" placeholder="nombre"><br>
+						<input type="text" name="nombre" id="nombre" placeholder="nombre" class="form__input-text"><br>
 						<label for="email">Email</label><br>
-						<input type="email" name="email" id="email" placeholder="eve@hola.com"><br>
+						<input type="email" name="email" id="email" placeholder="eve@hola.com" class="form__input-text"><br>
 						<legend class="form__subtitle">Entradas</legend>
 						<label for="50$">Común 50$</label>
-						<input type="radio" name="comun" id="50$" value="compra"><br>
+						<input type="radio" name="comun" id="50$" value="compra" class="form__input-radio"><br>
 						<label for="75$">VIP 75$</label>
-						<input type="radio" name="compravip" id="75$" value="vip"><br>
+						<input type="radio" name="compravip" id="75$" value="vip" class="form__input-radio"><br>
 						<label for="fecha">Fecha</label>
 						<input type="date" name="fecha a asistir" id="fecha" value="fecha" class="input__btn"><br>
 					</div>
@@ -64,9 +64,9 @@
 					<legend class="form__subtitle">Entrega de entradas</legend>
 					<div class="list__text">
 						<label for="local">Entrega en el lugar</label>
-						<input type="radio" name="entrega" id="local" value="local"><br>
+						<input type="radio" name="entrega" id="local" value="local" class="form__input-radio"><br>
 						<label for="envio">Envio a domicilio</label>
-						<input type="radio" name="entrega" id="envio" value="envio"><br>
+						<input type="radio" name="entrega" id="envio" value="envio" class="form__input-radio"><br>
 						<label for="localidad">Localidad</label>
 						<select name="localidad" id="localidad" class="input__btn">
 							<option value="caba" class="input__btn">CABA</option>
@@ -74,8 +74,8 @@
 							<option value="interior" class="input__btn">Interior del pais</option>
 						</select><br>
 					</div>
-					<label for="direccion">Dirección de domicilio</label>
-					<textarea name="direccion" id="direccion" cols="10" rows="1"></textarea>
+					<label for="direccion">Dirección de domicilio</label><br>
+					<textarea name="direccion" id="direccion" cols="10" rows="1" class="form__input-text"></textarea>
 				</fieldset>
 				<input type="submit" value="enviar" class="input__btn--send hover">
 				<input type="reset" value="cancelar" class="input__btn--send hover"> 
