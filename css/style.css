@@ -114,7 +114,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8em 4em;
+  height: 4em;
   margin: 0 2em;
   background-color: #0f0d0d;
   box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
@@ -125,13 +125,15 @@
   .redes__box .footer__title {
     font-family: "Raleway", sans-serif;
     font-size: 1.4em;
-    color: whitesmoke; }
+    color: whitesmoke;
+    margin-left: 1em; }
   .redes__box .redes__link {
     display: flex;
     list-style: none; }
     .redes__box .redes__link .redes__logo {
       width: 2em;
-      margin-right: 13px; }
+      margin-right: 1.5em;
+      margin-top: 0.8em; }
       .redes__box .redes__link .redes__logo:hover {
         transform: scale(1.5);
         cursor: pointer;
@@ -182,6 +184,9 @@
   text-align: center; }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 1.2em;
   border-radius: 10px;
@@ -190,15 +195,15 @@
   -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
   -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
   padding: 20px 20px 10px 20px;
-  margin: 10px; }
+  margin: 1em; }
   .box .discografia__img {
-    width: 15em; }
+    width: 12em; }
 
 .discografia__video {
-  padding: 1em 2em;
-  text-align: center; }
+  text-align: center;
+  padding: 1em; }
   .discografia__video .discografia__video--size {
-    width: 20em; }
+    width: 100%; }
 
 /*------------------------ discografia ends ------------------------------*/
 /*------------------------- merch starts -------------------------------------*/
@@ -208,7 +213,7 @@
   background-color: #0f0d0d;
   border-radius: 15px;
   padding: 1em;
-  margin: 4em;
+  margin: 2em;
   box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
   -webkit-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57);
   -moz-box-shadow: 0px 0px 16px 0px rgba(128, 128, 128, 0.57); }
@@ -226,8 +231,7 @@
   display: block; }
 
 .contact__form {
-  margin: 1em;
-  padding: 1em; }
+  margin: 1em 0; }
   .contact__form .contact__form--content {
     padding: 1em;
     line-height: 1.5em; }
@@ -261,6 +265,10 @@
     cursor: pointer; }
 
 /*----------------------------- extend -----------------------------------*/
+.map {
+  width: 17em;
+  height: 15em; }
+
 /*----------------------------- contact ends --------------------------------*/
 /*------------------------------------- index's grids starts ------------------------------*/
 .grid__nav {
@@ -502,7 +510,8 @@
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr; }
   .box {
-    margin: 1em; }
+    margin: 1em;
+    padding: 1.8em; }
   .discografia__video .discografia__video--size {
     width: 45em; }
   .slider__div--img {
@@ -570,7 +579,6 @@
 .grid__form {
   /*background-color: tomato;*/
   grid-area: form;
-  margin: 0 3em 2em 3em;
   text-align: center; }
 
 .grid__map {
@@ -648,7 +656,7 @@
 
 /*--------------- footer carousel ----------------*/
 .slider {
-  width: 100vw;
+  width: 99vw;
   height: auto;
   margin: auto;
   overflow: hidden; }
