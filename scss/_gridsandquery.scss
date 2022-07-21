@@ -92,7 +92,10 @@
     .article__single {
       margin-bottom: 5em;
     }
+    .redes__box{
+      margin: 0 3em;}
   }
+
   
   /*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
   
@@ -172,6 +175,8 @@
     .article__single {
       margin-bottom: auto;
     }
+    .redes__box{
+      margin: 0 3em;}
   }
   
   @media screen and (min-width: 2560px) {
@@ -213,8 +218,9 @@
       margin: 0.5em 0;
       box-shadow: 2px 2px 5px map-get($map: $colors, $key: 'uno');
     }
+    .redes__box{
+    margin: 0 3em;}
   }
-  
   /*------------------------- media query ends --------------------------------*/
   
 
@@ -460,7 +466,12 @@
   /*------------------------- contact's grids ends --------------------------*/
   
   /*---------------------------- media query -------------------------------*/
-  
+  @media screen and (min-width: 768px) {
+    .map {
+      width: 30em;
+      height: 20em;
+    }
+  }
   /*--------------- modificaciones para pantallas mayor a 1024 ----------------*/
   
   @media screen and (min-width: 1024px) {
